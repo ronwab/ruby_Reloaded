@@ -2,15 +2,89 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="890e12d5-94f8-45e4-8658-8a26da57f784" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spec/factories/patient.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/api/v1/patients_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/controllers/patient_controller_spec.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rakefile" beforeDir="false" afterPath="$PROJECT_DIR$/Rakefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/channels/application_cable/channel.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/channels/application_cable/channel.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/channels/application_cable/connection.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/channels/application_cable/connection.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/articles_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/articles_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/doctors_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/doctors_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/patient_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/patient_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/patient_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/people_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/people_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/people_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/people_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/jobs/application_job.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/jobs/application_job.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mailers/application_mailer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/mailers/application_mailer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/application_record.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/application_record.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/appointment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/appointment.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/article.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/article.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/doctor.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/doctor.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/patient.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/patient.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/person.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/person.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/people/_person.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/people/_person.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/people/index.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/people/index.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/people/show.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/people/show.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/bundle" beforeDir="false" afterPath="$PROJECT_DIR$/bin/bundle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/rails" beforeDir="false" afterPath="$PROJECT_DIR$/bin/rails" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/rake" beforeDir="false" afterPath="$PROJECT_DIR$/bin/rake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/setup" beforeDir="false" afterPath="$PROJECT_DIR$/bin/setup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/spring" beforeDir="false" afterPath="$PROJECT_DIR$/bin/spring" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/webpack" beforeDir="false" afterPath="$PROJECT_DIR$/bin/webpack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/webpack-dev-server" beforeDir="false" afterPath="$PROJECT_DIR$/bin/webpack-dev-server" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/yarn" beforeDir="false" afterPath="$PROJECT_DIR$/bin/yarn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.ru" beforeDir="false" afterPath="$PROJECT_DIR$/config.ru" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/boot.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/boot.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environment.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/application_controller_renderer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/application_controller_renderer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/assets.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/backtrace_silencers.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/backtrace_silencers.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/content_security_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/content_security_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/cookies_serializer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/cookies_serializer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/inflections.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/inflections.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/mime_types.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/mime_types.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/puma.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/puma.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/spring.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/spring.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190827084441_create_articles.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190827084441_create_articles.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190829093242_create_people.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190829093242_create_people.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190903085336_create_doctors.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190903085336_create_doctors.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190903085412_create_patients.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190903085412_create_patients.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190903085639_create_appointments.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190903085639_create_appointments.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190903235736_rename_physician_id_to_doctor_id.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190903235736_rename_physician_id_to_doctor_id.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190906101432_rename_patient_name.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190906101432_rename_patient_name.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190906101748_add_columns_to_patient_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190906101748_add_columns_to_patient_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190906132200_rename_patient_first_name_field.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190906132200_rename_patient_first_name_field.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20190906132549_add_last_name_to_patient.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190906132549_add_last_name_to_patient.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/play.rb" beforeDir="false" afterPath="$PROJECT_DIR$/play.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/controllers/doctor_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/doctor_controller_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/person_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/person_controller_spec.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/factories/doctors.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/doctors.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/factories/patient.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/patient.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/models/doctor_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/doctor_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/rails_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/rails_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/spec_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_OG/application_system_test_case.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test_OG/application_system_test_case.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_OG/channels/application_cable/connection_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test_OG/channels/application_cable/connection_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_OG/controllers/api/v1/articles_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test_OG/controllers/api/v1/articles_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_OG/controllers/people_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test_OG/controllers/people_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_OG/models/appointment_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test_OG/models/appointment_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_OG/models/article_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test_OG/models/article_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_OG/models/doctor_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test_OG/models/doctor_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_OG/models/patient_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test_OG/models/patient_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_OG/models/person_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test_OG/models/person_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_OG/system/people_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test_OG/system/people_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_OG/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test_OG/test_helper.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,10 +113,37 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/patient.rb">
+        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/patients_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+            <state relative-caret-position="210">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/controllers/patient_controller_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="445">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/controllers/doctor_controller_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -50,44 +151,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/doctors_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/controllers/doctor_controller_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/factories/doctors.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/factories/patient.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/schema.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="37" column="3" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="28" />
+            <state relative-caret-position="-82">
+              <caret line="26" column="56" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -107,6 +172,9 @@
       <find>dev</find>
       <find>faker</find>
       <find>byebug</find>
+      <find>Api::V1::PatientsController</find>
+      <find>exception</find>
+      <find>invalid_response</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -132,7 +200,6 @@
         <option value="$PROJECT_DIR$/db/migrate/20190903085639_create_appointments.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20190903085336_create_doctors.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20190903085412_create_patients.rb" />
-        <option value="$PROJECT_DIR$/app/models/patient.rb" />
         <option value="$PROJECT_DIR$/app/models/appointment.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
@@ -147,17 +214,20 @@
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/articles_controller.rb" />
         <option value="$PROJECT_DIR$/play.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/api/v1/patient_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20190906101432_rename_patient_name.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20190906101748_add_columns_to_patient_controller.rb" />
         <option value="$PROJECT_DIR$/spec/models/doctor_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/doctor.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/api/v1/doctors_controller.rb" />
-        <option value="$PROJECT_DIR$/spec/factories/doctors.rb" />
-        <option value="$PROJECT_DIR$/spec/controllers/doctor_controller_spec.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20190906132200_rename_patient_first_name_field.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20190906132549_add_last_name_to_patient.rb" />
+        <option value="$PROJECT_DIR$/spec/factories/doctors.rb" />
         <option value="$PROJECT_DIR$/spec/factories/patient.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/patient_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/patient.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/doctors_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/patients_controller.rb" />
+        <option value="$PROJECT_DIR$/spec/controllers/patient_controller_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/controllers/doctor_controller_spec.rb" />
       </list>
     </option>
   </component>
@@ -211,36 +281,7 @@
             <path>
               <item name="fs" type="b2602c69:ProjectViewProjectNode" />
               <item name="fs" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fs" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fs" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="migrate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fs" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fs" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fs" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="factories" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -331,12 +372,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566477400108</updated>
-      <workItem from="1566477401440" duration="72113000" />
+      <workItem from="1566477401440" duration="87132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72113000" />
+    <option name="totallyTimeSpent" value="87132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="23" width="1679" height="987" extended-state="6" />
@@ -350,12 +391,12 @@
       <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.26756263" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.4277588" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.27872583" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32992035" />
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
@@ -406,16 +447,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20190822132552_add_email_to_supplier.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/products_controller.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/supplier_controller.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -485,13 +516,6 @@
     <entry file="file://$PROJECT_DIR$/.rspec">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/rspec-core-3.5.4/lib/rspec/core/configuration.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
@@ -506,13 +530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/controllers/person_controller_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/person.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -520,31 +537,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="32" column="13" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/people_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1533">
-          <caret line="73" column="38" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/appointment_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -586,13 +582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/patient_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -651,48 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/doctor_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/doctor.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/patient.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/controllers/doctor_controller_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/doctors_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="37" column="3" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20190906132200_rename_patient_first_name_field.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -721,17 +668,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/factories/doctors.rb">
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="284">
+          <caret line="37" column="3" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/appointment_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/factories/patient.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="105">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/factories/doctors.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/people_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="73" column="38" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/controllers/person_controller_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/doctor_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/doctor.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="68" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/patient.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/patients_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/controllers/patient_controller_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/doctors_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-82">
+          <caret line="26" column="56" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/controllers/doctor_controller_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
         </state>
       </provider>
     </entry>

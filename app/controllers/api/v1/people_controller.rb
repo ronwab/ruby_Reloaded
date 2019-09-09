@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 module Api
   module V1
     class PeopleController < ApplicationController
-      before_action :set_person, only: [:show, :edit, :update, :destroy]
+      before_action :set_person, only: %i[show edit update destroy]
 
       # GET /people
       # GET /people.json
@@ -11,8 +13,7 @@ module Api
 
       # GET /people/1
       # GET /people/1.json
-      def show
-      end
+      def show; end
 
       # GET /people/new
       def new
@@ -20,8 +21,7 @@ module Api
       end
 
       # GET /people/1/edit
-      def edit
-      end
+      def edit; end
 
       # POST /people
       # POST /people.json
@@ -64,6 +64,7 @@ module Api
       end
 
       private
+
       # Use callbacks to share common setup or constraints between actions.
       def set_person
         @person = Person.find(params[:id])
@@ -74,6 +75,5 @@ module Api
         params.require(:person).permit(:name, :age)
       end
     end
-
   end
 end

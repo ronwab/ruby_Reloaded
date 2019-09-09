@@ -1,7 +1,7 @@
+# frozen_string_literal: true
 
 require 'rubygems'
 require 'httparty'
-
 
 # response = HTTParty.get('https://jsonplaceholder.typicode.com/posts')
 # puts response.body
