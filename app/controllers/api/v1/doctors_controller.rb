@@ -15,10 +15,13 @@ module Api
 
       def show
         render json: { message: 'Requested doctor', data: doctor }, status: 200
+        Rails.logger.info("Here is the doctor's info.. Messing with the logs #{doctor}")
       end
 
       def create
-        new_doctor = Doctor.create!(doctors_params)
+        # new_doctor = Doctor.create!(doctors_params)
+        # //Calling the DoctorService currently in the model directtory. ::sends us back to the root folder
+        new_doctor = ::DoctorService.call(doctors_params)
         render json: { message: 'Doctor Created', data: new_doctor }, status: 200
       end
 
@@ -33,13 +36,13 @@ module Api
 
       def destroy
         doctor.destroy
-        render json: { message: 'Doctor deleted' }, staus: :ok
+        render json: { message: 'Doctor deleted' }, staus: 200
       end
 
       private
 
       def doctors_params
-        params.require(:doctor).permit(:id, :name, :specialty)
+        params.permit(:id, :name, :specialty)
       end
 
       def invalid_response(exception)

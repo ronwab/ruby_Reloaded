@@ -38,7 +38,6 @@ module Api
         render json: { message: 'Patient not found' }, status: 404
       end
 
-      # research this once again
       def invalid_record_error(exception)
         render json: { message: exception.message }, status: 403
       end
