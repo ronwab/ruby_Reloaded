@@ -14,6 +14,6 @@ end
 end
 5.times do
   Patient.create(
-    name: Faker::Artist.name
+      first_name: Faker::Artist.name
   )
 end

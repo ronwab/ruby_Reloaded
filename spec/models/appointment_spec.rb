@@ -12,17 +12,28 @@ RSpec.describe Appointment, type: :model do
       appointment = Appointment.new( doctor_id: doctor.id, patient_id: patient.id, starting_at: Time.now )
       expect(appointment).to be_valid
     end
+
     it "is invalid with schedule collusion " do
       time = Time.now
       Appointment.create!( doctor_id: doctor.id, patient_id: patient.id, starting_at: time )
       appointment = Appointment.new( doctor_id: doctor.id, patient_id: patient.id, starting_at: time )
       expect(appointment).not_to be_valid
     end
+
     it "is valid with different doctors and patients at the same time" do
       time = Time.now
       Appointment.create!( doctor_id: doctor.id, patient_id: patient.id, starting_at: time )
       appointment = Appointment.new( doctor_id: doctor2.id, patient_id: patient2.id, starting_at: time )
       expect(appointment).to be_valid
     end
+
+    it "Patient should not be able to schedule multiple appointments per day" do
+    time = Time.now.strftime("%d/%m/%Y")
+      appointment = Appointment.create!( doctor_id: doctor.id, patient_id: patient.id, starting_at: time )
+      appointment1 = Appointment.new( doctor_id: doctor.id, patient_id: patient.id, starting_at: time )
+      expect(appointment1).not_to be_valid
+    end
+    it "appointments should not overlap" do
+
   end
 end

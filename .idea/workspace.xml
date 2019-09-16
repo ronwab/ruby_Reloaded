@@ -2,23 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="890e12d5-94f8-45e4-8658-8a26da57f784" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/api/v1/appointments_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/doctor_service.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/controllers/appointment_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/factories/appointments.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/appointment_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/fs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fs.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/appointment_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/appointment_time_validator.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/appointments_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/appointments_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/doctors_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/doctors_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/patients_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/patients_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/appointment_time_validator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/appointment_time_validator.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/appointment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/appointment.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20190909124245_rename_appointment_date_to_appointment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20190909124245_rename_appointment_date_to_appointment.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/doctor.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/doctor.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/play.rb" beforeDir="false" afterPath="$PROJECT_DIR$/play.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/controllers/doctor_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/doctor_controller_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/patient.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/patients.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/appointment_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/appointment_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/appointment_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/appointment_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/doctor_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/doctor_spec.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,26 +48,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>config.fixture_path</find>
-      <find>dev</find>
-      <find>faker</find>
-      <find>byebug</find>
-      <find>Api::V1::PatientsController</find>
-      <find>exception</find>
-      <find>invalid_response</find>
-      <find>created</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="21" />
-    <option name="y" value="23" />
-    <option name="width" value="1635" />
-    <option name="height" value="988" />
   </component>
   <component name="ProjectId" id="1QcxAhKzBHh1z6DLLE9DsbSmhz2" />
   <component name="ProjectLevelVcsManager">
@@ -156,7 +135,8 @@
       <workItem from="1566477401440" duration="95431000" />
       <workItem from="1568083448465" duration="51000" />
       <workItem from="1568083547163" duration="50000" />
-      <workItem from="1568083620318" duration="15407000" />
+      <workItem from="1568083620318" duration="19634000" />
+      <workItem from="1568327101383" duration="13333000" />
     </task>
     <servers />
   </component>

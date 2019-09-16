@@ -20,7 +20,7 @@ module Api
 
       def create
         # new_doctor = Doctor.create!(doctors_params)
-        # //Calling the DoctorService currently in the model directtory. ::sends us back to the root folder
+        # //Calling the DoctorService currently in the model directory. ::sends us back to the root folder
         new_doctor = ::DoctorService.call(doctors_params)
         render json: { message: 'Doctor Created', data: new_doctor }, status: 200
       end
