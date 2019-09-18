@@ -11,11 +11,3 @@ validates_with AppointmentTimeValidator
   def self.filter_to_specialty(specialty)
   end
 end
-
-
-# def self.contactable
-#   where(do_not_contact: [false, nil]).
-#       includes(:company_object).
-#       references(:companies).
-#       where(companies: { do_not_contact: [false, nil] })
-# end

@@ -20,8 +20,10 @@ module Api
       end
 
       def destroy
-        patient.destroy
-        render json: { message: 'Patient is deleted' }, status: 200
+        # calls sidekiq
+        PatientDestroyer.perform_async(patient_params[:id])
+        # patient.destroy
+        render json: { message: 'Patient is queued for deletion' }, status: 200
       end
 
       def patient

@@ -3,19 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="890e12d5-94f8-45e4-8658-8a26da57f784" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/appointments_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/appointments_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/doctors_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/doctors_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/appointment_time_validator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/appointment_time_validator.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/appointment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/appointment.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/doctor.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/doctor.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/controllers/appointment_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/appointment_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/appointment_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/appointment_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/doctor_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/doctor_spec.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,6 +124,7 @@
       <workItem from="1568083547163" duration="50000" />
       <workItem from="1568083620318" duration="19634000" />
       <workItem from="1568327101383" duration="13333000" />
+      <workItem from="1568626680937" duration="599000" />
     </task>
     <servers />
   </component>
