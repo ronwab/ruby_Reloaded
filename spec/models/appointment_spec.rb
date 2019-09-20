@@ -36,4 +36,5 @@ RSpec.describe Appointment, type: :model do
     it "appointments should not overlap" do
 
   end
+  end
 end
