@@ -1,0 +1,49 @@
+AllCops:
+  DisabledByDefault: true
+  TargetRubyVersion: 2.6.1
+  Exclude:
+    - "db/schema.rb"
+    - "bin/*"
+    - "deploy/**/*"
+    - "node_modules/**/*"
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/HashSyntax:
+  Enabled: true
+
+Style/BracesAroundHashParameters:
+  EnforcedStyle: context_dependent
+
+Style/Documentation:
+  Enabled: false
+
+Style/MethodDefParentheses:
+  Enabled: true
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+Layout/IndentFirstHashElement:
+  EnforcedStyle: consistent
+
+Layout/TrailingBlankLines:
+  Enabled: true
+
+Layout/TrailingWhitespace:
+  Enabled: true
+
+Layout/SpaceInsideBlockBraces:
+  SpaceBeforeBlockParameters: true
+  EnforcedStyle: space
+
+Layout/SpaceBeforeBlockBraces:
+  Enabled: true
+  EnforcedStyle: space
+
+Layout/AlignHash:
+  Enabled: true
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: variable

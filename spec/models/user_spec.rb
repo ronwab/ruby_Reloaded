@@ -1,35 +1,45 @@
-require 'rails_helper'
+# frozen_string_literal: true
+
+require "rails_helper"
 
 RSpec.describe User, type: :model do
-
-  let(:user) { FactoryGirl.create(:user)}
-
   describe "should be valid" do
-    it "name is required"  do
-   user = User.create(name: " ", email: "ron@test.com")
+    let(:user) { FactoryGirl.create(:user) }
+
+    it "name is required" do
+      user.name = " "
+
       expect(user).not_to be_valid
     end
-    it "email is required"  do
-      user = User.create(name:"ron", email: "")
+    it "email is required" do
+      user.email = " "
       expect(user).not_to be_valid
     end
     it "email must be unique" do
-      user1 = User.create(name:'Ron', email:"ron@test.com")
-      user2 =User.create(name:"pail", email:"ron@test.com")
+      user2 = user.dup
       expect(user2).not_to be_valid
     end
-    it "name should be more than 2 characters" do
-      user =User.create(email:"ron@test.com", name: "r")
+    it "name should be more than 4 characters" do
+      user.name = "a" * 3
       expect(user).not_to be_valid
     end
-    it "emails should be case insensitive" do
-      user1 = User.create(name:'Ron', email:"ron@test.com")
-      user2 =User.create(name:"pail", email:"RON@test.com")
-      user3 =User.create(name:"pails", email:"RoN@tesT.com")
-      expect(user1).to be_valid
-      expect(user2).to be_valid
+
+    it "emails should saved as lowercase" do
+      email = "RONALD.BUKENDA@TEST.COM"
+      FactoryGirl.create(:user, email: email)
+      expect(User.last.email).to eq(email.downcase)
+    end
+
+    it "valid emails" do
+    end
+  end
+
+  describe "password and confirm passwords" do
+    let(:user) { FactoryGirl.build(:user, password: "", password_confirmation: "") }
+
+    it "password and confirmation_password must match" do
+      user.password_confirmation = "test"
+      expect(user).not_to be_valid
     end
   end
 end
-
-

@@ -1,24 +1,25 @@
-require 'rails_helper'
+require "rails_helper"
+
 
 RSpec.describe UserController, type: :controller do
 
   describe "GET #name:" do
     it "returns http success" do
-      get :name:
+      get :name
       expect(response).to have_http_status(:success)
     end
   end
 
   describe "GET #string," do
     it "returns http success" do
-      get :string,
+      get :string
       expect(response).to have_http_status(:success)
     end
   end
 
   describe "GET #email:" do
     it "returns http success" do
-      get :email:
+      get :email
       expect(response).to have_http_status(:success)
     end
   end

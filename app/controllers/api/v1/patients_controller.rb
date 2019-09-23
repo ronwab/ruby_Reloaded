@@ -7,23 +7,23 @@ module Api
       rescue_from ActiveRecord::RecordInvalid,  with: :invalid_record_error
       def index
         @patient = Patient.all
-        render json: { message: 'Here is your list', data: @patient }, status: 200
+        render json: { message: "Here is your list", data: @patient }, status: 200
       end
 
       def show
-        render json: { message: 'Patients list', data: patient }, status: 200
+        render json: { message: "Patients list", data: patient }, status: 200
       end
 
       def create
         new_patient = Patient.create!(patient_params)
-        render json: { message: 'Patient record created', data: new_patient }, status: 200
+        render json: { message: "Patient record created", data: new_patient }, status: 200
       end
 
       def destroy
         # calls sidekiq
         PatientDestroyer.perform_async(patient_params[:id])
         # patient.destroy
-        render json: { message: 'Patient is queued for deletion' }, status: 200
+        render json: { message: "Patient is queued for deletion" }, status: 200
       end
 
       def patient
@@ -37,7 +37,7 @@ module Api
       end
 
       def patient_not_found
-        render json: { message: 'Patient not found' }, status: 404
+        render json: { message: "Patient not found" }, status: 404
       end
 
       def invalid_record_error(exception)

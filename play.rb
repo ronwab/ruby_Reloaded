@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'rubygems'
-require 'httparty'
+require "rubygems"
+require "httparty"
 
 # response = HTTParty.get('https://jsonplaceholder.typicode.com/posts')
 # puts response.code
@@ -17,7 +17,7 @@ class Blah
   end
 
   def validate
-    self.send(:run_validate_callback)
+    send(:run_validate_callback)
   end
 end
 playa = User.new.validate

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 FactoryGirl.define do
   factory :appointment do
     doctor_id { Faker::Number.number(digits: 8) }
