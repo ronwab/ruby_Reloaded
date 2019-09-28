@@ -19,6 +19,7 @@ RSpec.describe User, type: :model do
       user2 = user.dup
       expect(user2).not_to be_valid
     end
+    # check why this fails
     it "name should be more than 4 characters" do
       user.name = "a" * 3
       expect(user).not_to be_valid
@@ -28,18 +29,6 @@ RSpec.describe User, type: :model do
       email = "RONALD.BUKENDA@TEST.COM"
       FactoryGirl.create(:user, email: email)
       expect(User.last.email).to eq(email.downcase)
-    end
-
-    it "valid emails" do
-    end
-  end
-
-  describe "password and confirm passwords" do
-    let(:user) { FactoryGirl.build(:user, password: "", password_confirmation: "") }
-
-    it "password and confirmation_password must match" do
-      user.password_confirmation = "test"
-      expect(user).not_to be_valid
     end
   end
 end

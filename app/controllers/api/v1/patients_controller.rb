@@ -11,7 +11,14 @@ module Api
       end
 
       def show
-        render json: { message: "Patients list", data: patient }, status: 200
+        # @patient=Patient.find(patient_params[:id])
+        # render json: @post.to_json(only: [:title, :description, :id],
+        #                            include: [author: { only: [:name]}])
+
+        # serializer: PersonSearchSerializer
+        # render json: { message: "Patients list", data: patient }, status: 200
+        render json: { message: "Patients list", data:patient}, status: 200
+        # render JSON @patient.to_json(only: [:first_name, :id])
       end
 
       def create
@@ -28,6 +35,7 @@ module Api
 
       def patient
         @patient ||= Patient.find(patient_params[:id])
+
       end
 
       private

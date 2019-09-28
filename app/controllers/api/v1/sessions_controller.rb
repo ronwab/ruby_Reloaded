@@ -1,8 +1,7 @@
-# frozen_string_literal: true
 
 module Api
   module V1
-    class UsersController < ApplicationController
+    class SessionController<ApplicationController
       def create
 
       end
@@ -11,4 +10,5 @@ module Api
       end
     end
   end
-end
+
+  end

@@ -14,7 +14,7 @@ module Api
 
       # show specific article
       def show
-        article = Article.find(params[:id])
+        article
         render json: { status: "success", message: "Here is your article", data: article }, status: :ok
       end
 
@@ -30,13 +30,16 @@ module Api
       end
 
       def destroy
-        article = Article.find(params[:id])
+
         article.destroy
         render json: { status: "Success", message: "Deleted was successfull", data: article }, status: :ok
       end
     end
 
     private
+    def article
+      article = Article.find(params[:id])
+    end
 
     def articles_params
       params.permit(:title, :body)

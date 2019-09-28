@@ -24,6 +24,10 @@ gem "jbuilder", "~> 2.7"
 gem "bcrypt", "~> 3.1.7"
 gem "sidekiq"
 gem "sinatra", github: "sinatra/sinatra"
+gem 'devise'
+gem 'pry', '~> 0.12.2'
+gem 'jwt'
+gem 'active_model_serializers'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
