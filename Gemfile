@@ -28,6 +28,7 @@ gem 'devise'
 gem 'pry', '~> 0.12.2'
 gem 'jwt'
 gem 'active_model_serializers'
+gem "rack-cors", require: "rack/cors"
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
