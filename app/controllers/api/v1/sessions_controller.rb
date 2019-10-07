@@ -1,7 +1,7 @@
 
 module Api
   module V1
-    class SessionController<ApplicationController
+    class Users::SessionController<ApplicationController
       def create
 
       end

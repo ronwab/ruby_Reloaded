@@ -23,5 +23,13 @@ module Fs
         resource '*', :headers => :any, :methods => [:get, :post, :options]
       end
     end
+    ActionMailer::Base.smtp_settings = {
+        :address => 'smtp.gmail.com',
+        :domain => 'mail.google.com',
+        :username => ENV['GMAIL_USERNAME'],
+        :password => ENV['GMAIL_PASSWORD'],
+        :authentication => 'login',
+        :enable_starttls_auto => true
+    }
   end
 end

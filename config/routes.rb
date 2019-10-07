@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  devise_for :users
+  # enable customization of devise gem
+  devise_for :users, controllers:  { registrations: 'api/v1/registrations' }
+
   require "sidekiq/web"
   mount Sidekiq::Web => "/sidekiq"
   resources :people
@@ -9,8 +11,16 @@ Rails.application.routes.draw do
 
   namespace "api" do
     namespace "v1" do
-      resources :articles, :doctors, :patients, :appointments, :users
-      resources :sessions, only: [:create, :destroy]
+
+      root 'articles#index'
+      resources :articles, :doctors, :patients, :appointments, :home
+      # resources :users, except: :create
+      # resources :registrations
+      # devise_scope :api/v1, defaults: {format: :json} do
+      #   post '/', to: 'registrations#create'
+      # end
+      # resources :sessions, only: [:create, :destroy]
+
     end
   end
 end

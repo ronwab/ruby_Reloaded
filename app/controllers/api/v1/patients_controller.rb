@@ -3,6 +3,9 @@
 module Api
   module V1
     class PatientsController < ApplicationController
+
+      # before_action :authenticate_user!
+
       rescue_from ActiveRecord::RecordNotFound, with: :patient_not_found
       rescue_from ActiveRecord::RecordInvalid,  with: :invalid_record_error
       def index

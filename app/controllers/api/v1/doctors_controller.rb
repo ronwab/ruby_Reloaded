@@ -5,6 +5,8 @@ module Api
     class DoctorsController < ApplicationController
       # aded this to prevent some erros.just googled
       protect_from_forgery with: :null_session
+      before_action :authenticate_user!
+
       # Rescue errors from the model
       rescue_from ActiveRecord::RecordInvalid, with: :invalid_response
       rescue_from ActiveRecord::RecordNotFound, with: :not_found_response
