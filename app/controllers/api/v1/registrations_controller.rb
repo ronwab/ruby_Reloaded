@@ -3,7 +3,6 @@ module Api
     class RegistrationsController < Devise::RegistrationsController
 
       def create
-      puts "In here, #{params}"
         super
       end
 

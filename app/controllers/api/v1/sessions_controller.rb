@@ -1,14 +1,18 @@
-
 module Api
   module V1
-    class Users::SessionController<ApplicationController
+    class SessionsController < Devise::SessionsController
+
+
       def create
-
+        Rails.logger.info("inside create")
+        super
       end
-      def destroy
 
+
+      def destroy
+        super
       end
     end
   end
 
-  end
+end

@@ -9,5 +9,5 @@ class Appointment < ApplicationRecord
   validates :patient_id, presence: true
   validates :starting_at, presence: true
 
-  def self.filter_to_specialty(specialty); end
+
 end

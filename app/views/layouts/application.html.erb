@@ -10,12 +10,12 @@
   </head>
 
   <body>
-  <% if user_signed_in? %>
+  <%# if user_signed_in? %>
+<!--    <p>Hello <%#=current_user.name %> <%#= link_to "sign_out", destroy_user_session_path, :method=> "delete"  %></p>-->
 
-    <p>Hello <%=current_user.name %> <%= link_to "sign_out", destroy_user_session_path, :method=> "delete"  %></p>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-<%end %>
+<%#end %>
+
+<%=  render  'layouts/alerts'%>>
     <%= yield %>
   </body>
 </html>

@@ -10,16 +10,12 @@ module Api
       rescue_from ActiveRecord::RecordInvalid,  with: :invalid_record_error
       def index
         @patient = Patient.all
-        render json: { message: "Here is your list", data: @patient }, status: 200
+        # render json: { message: "Here is your list", data: @patient }, status: 200
+        render json: @patient, each_serializer: PatientSerializer
       end
 
       def show
-        # @patient=Patient.find(patient_params[:id])
-        # render json: @post.to_json(only: [:title, :description, :id],
-        #                            include: [author: { only: [:name]}])
 
-        # serializer: PersonSearchSerializer
-        # render json: { message: "Patients list", data: patient }, status: 200
         render json: { message: "Patients list", data:patient}, status: 200
         # render JSON @patient.to_json(only: [:first_name, :id])
       end
